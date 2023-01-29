@@ -1,0 +1,461 @@
+
+@import 'utilities.css';
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+header{
+    background: #161616;
+    /* height: 650px; */
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin-left: 276px;
+}
+
+.logo h1{
+    color: darkgoldenrod;
+    font-family: cursive;
+}
+
+
+.logo h1:hover{
+    color:blue;
+}
+
+header nav{
+    padding: 1rem 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 0 0 1px;
+}
+
+header nav .left a{
+    color: whitesmoke;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+header nav .left a:hover{
+    color: red;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    padding: 5px;
+    transition: all .3s ease;
+}
+
+header nav .logo{
+    margin-left: -16rem;
+}
+
+button{
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: darkcyan;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.content .right{
+    margin-left: 85px;
+    margin-top: 42px;
+    color:antiquewhite
+
+}
+
+.content img{
+    width: 296px;
+    height: 510px;
+    margin-left: -132px;
+}
+
+
+.content .right h5{
+    color: wheat;
+    font-size: 18px;
+    margin-bottom: 1px;
+}
+
+.content .right h1{
+    color: darkgoldenrod;
+    margin-bottom: 1px;
+}
+
+.content .right h2{
+    color: wheat;
+    margin-bottom: 5px;
+}
+
+.content .right h2 span{
+    font-size: larger;
+    color: lightcoral;
+    margin-bottom: 5px;
+}
+
+.content .right p{
+    color: wheat;
+    margin-bottom: 20px;
+}
+
+.content .right button{
+    border-radius: 5px;
+    color:darkcyan;
+    padding: 10px;
+    border-color: darkcyan;
+    background-color: #161616;
+}
+
+.content .right button:hover{
+    color: white;
+    background-color: darkcyan;
+}
+
+section{
+    background-color: black;
+    height: 500px;
+    margin-top: 3px;
+}
+.About img{
+    margin-top: 32px;
+    width: 297px;
+    height: 416px;
+    margin-left: 1020px;
+    border-radius: 20px;
+}
+
+.About .center{
+    margin-top: -314px;
+    margin-left: 70px;
+}
+
+.About .center h1{
+      font-size: 40px;
+      font-weight: 25px;
+      color: whitesmoke;
+}
+
+.About .center h2{
+    font-size: 30px;
+    font-weight: 15px;
+    color: wheat;
+    margin-top: 13px;
+}
+
+.About .center p{
+    font-size: 22px;
+    font-weight: 15px;
+    color: wheat;
+    margin-top: 18px;
+}
+
+.About .center p span{
+    font-size: 25px;
+    color: darkred;
+    font-weight: 500;
+}
+
+.education{
+    height: 350px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.school{
+    margin-left: 46px;
+    margin-top: 22px;
+    border: 7px solid darkcyan;
+    width: 378px;
+    padding: 29px;
+    height: 250px;
+}
+
+.school h2 span{
+    font-size: 25px;
+    color: darkcyan;
+}
+
+.clg{
+    margin-left: 918px;
+    margin-top: -248px;
+    border: 7px solid darkcyan;
+    width: 378px;
+    padding: 29px;
+    height: 250px;
+}
+
+.clg h2 span{
+    font-size: 25px;
+    color: darkcyan;
+}
+
+.education h1{
+    margin-left: 675px;
+    padding: 5px;
+    font-size: 30px;
+    color: darkcyan;
+}
+
+.Myskills{
+    background-color: #161616;
+    height: 610px;
+    margin-top: 3px;
+}
+
+.Myskills h1{
+    color: darkcyan;
+    margin-left: 682px;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.skill-1{
+    color: azure;
+}
+
+.skill-1 h2{
+    font-size: 35px;
+    margin-left: 147px;
+    margin-top: -84px;
+}
+
+.skill-1 p{
+    margin-top: 7px;
+    font-size: 20px;
+    margin-left: 139px;
+    margin-bottom: 70px;
+}
+
+.skill-1 img{
+    margin-left: 18px;
+}
+
+.skill-2{
+    color: azure;
+}
+
+.skill-2 h2{
+    font-size: 35px;
+    margin-left: 147px;
+    margin-top: -84px;
+}
+
+.skill-2 p{
+    margin-top: 7px;
+    font-size: 20px;
+    margin-left: 139px;
+    margin-bottom: 70px;
+}
+
+.skill-2 img{
+    margin-left: 18px;
+}
+
+.skill-3{
+    color: azure;
+}
+
+.skill-3 h2{
+    font-size: 35px;
+    margin-left: 147px;
+    margin-top: -84px;
+}
+
+.skill-3 p{
+    margin-top: 7px;
+    font-size: 20px;
+    margin-left: 139px;
+    margin-bottom: 70px;
+}
+
+.skill-3 img{
+    margin-left: 18px;
+}
+
+.skill-4{
+    margin-top: -107px;
+    margin-left: 45px;
+    color: azure;
+    font-size: 20px;
+}
+.skill-4 h2{
+    margin-top: 48px;
+    color: azure;
+}
+
+.skill-4 ul li{
+    color: darkcyan;
+    margin-top: 2px;
+}
+
+.skill-display{
+    margin-left: 944px;
+    margin-top: -557px;
+    width: 70%;
+    flex-wrap: wrap;
+    
+}
+
+.skills{
+    border: 1px solid darkgoldenrod;
+    width: 130px;
+    height: 27px;
+    background-color: lightpink;
+    border-radius: 13px;
+    margin: 8px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skills>div{
+    border-radius: 20px 0px 0px 20px;
+}
+
+#skill1{
+    padding: 2px;
+    color:whitesmoke;
+    font-weight:100;
+    width: 85%;
+    background-color: darkred;
+    height: inherit;
+    overflow: hidden;
+    border: 1px  solid darkred;
+}
+
+#skill2{
+    padding: 2px;
+    color:whitesmoke;
+    font-weight:100;
+    width: 85%;
+    background-color: darkorange;
+    height: inherit;
+    overflow: hidden;
+    border: 1px  solid darkorange;
+}
+
+#skill3{
+    padding: 2px;
+    color:whitesmoke;
+    font-weight:100;
+    width: 85%;
+    background-color: saddlebrown;
+    height: inherit;
+    overflow: hidden;
+    border: 1px  solid saddlebrown;
+}
+
+#skill4{
+    padding: 2px;
+    color:whitesmoke;
+    font-weight:100;
+    width: 85%;
+    background-color: mediumblue;
+    height: inherit;
+    overflow: hidden;
+    border: 1px  solid mediumblue;
+}
+
+#skill5{
+    padding: 2px;
+    color:whitesmoke;
+    font-weight:100;
+    width: 85%;
+    background-color: darkgoldenrod;
+    height: inherit;
+    overflow: hidden;
+    border: 1px  solid darkgoldenrod;
+}
+
+#skill6{
+    padding: 2px;
+    color:whitesmoke;
+    font-weight:100;
+    width: 85%;
+    background-color: seagreen;
+    height: inherit;
+    overflow: hidden;
+    border: 1px  solid seagreen;
+}
+
+#skill7{
+    padding: 2px;
+    color:whitesmoke;
+    font-weight:100;
+    width: 85%;
+    background-color: teal;
+    height: inherit;
+    overflow: hidden;
+    border: 1px  solid teal;
+}
+
+#contact{
+    background-color: #161616;
+    color: white;
+}
+
+.c-design{
+    outline: none;
+    border:0;
+    border-bottom-style: solid;
+    font-size: 20px;
+    color: maroon;
+    margin-top: 15px;
+    background-color: azure;
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 7px;
+}
+
+.contact-heading{
+    margin-left: 695px;
+    font-size: 30px;
+    margin-top: 3px;
+    padding: 5px;
+}
+#contact-aside{
+    margin-left: 696px;
+    margin-top: -292px;
+}
+
+#contact-aside h1 span{
+    color: darkcyan;
+    font-size: 25px;
+}
+
+
+#contact-form{
+    border: 15px solid darkcyan;
+    width: 430px;
+}
+
+#contact button{
+    border-radius: 34px;
+    padding: 12px;
+    margin-top: 19px;
+    font-size: 20px;
+}
+
+.socialicons{
+    margin-left: -69px;
+    margin-top: 70px;
+}
+
+.socialicons a{
+        margin: 28px;
+}
+
+.socialicons a i:hover{
+    transform: scale(1.4);
+    background-color: teal;
+    opacity: 0.9;
+}
