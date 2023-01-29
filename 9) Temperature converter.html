@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+       .full{
+        background-color: slategray;
+        width: 1342px;
+        height: 650px;
+        }
+
+        .container{
+            border-radius: 21px;
+            padding: 56px;
+            background-color: rgb(169, 97, 97);
+            margin-top: 209px;
+            margin-left: 440px;
+             height: 252px;
+            width: 506px;
+        }
+
+       .wrap{
+            margin-top: -72px;
+            padding: 21px;
+        }
+
+        #celcius, #Fahrenheit, #Kelvin{
+            margin-bottom: 10px;
+            margin-left: 99px;
+        }
+
+        .button button{
+            margin-top: 12px;
+            margin-left: 137px;
+           width: 85px;
+           border-radius: 25px;
+        }
+
+        .button button:hover{
+             background-color: darkkhaki;
+             transform: scale(1.1);
+        }
+
+        input{
+            width: 173px;
+           height: 38px;
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="full">
+
+        <div class="container">
+            <div class="wrap">
+                <h1>Temperature converter</h1>
+            </div>
+            
+            <div id="celcius">
+                <input type="number" placeholder="Celcius">
+            </div>
+            
+            <div id="Fahrenheit">
+                <input type="number" placeholder="Fahrenheit">
+            </div>
+            
+            <div id="Kelvin">
+                <input type="number" placeholder="Kelvin">
+            </div>
+            
+            <div class="button">
+                <button>Clear</button>
+            </div>
+        </div>
+    </div>
+    </body>
+
+    <script>
+        let celInput = document.querySelector('#celcius > input')
+        let ferInput = document.querySelector('#Fahrenheit > input')
+        let kelInput = document.querySelector('#Kelvin > input')
+
+        let btn = document.querySelector('.button button')
+
+        function roundNumber(number){
+            return Math.round(number*100)/100
+        }
+
+        celInput.addEventListener('input', function(){
+            let cTemp = parseFloat(celInput.value)
+            let fTemp = (cTemp*(9/5)) + 32
+            let kTemp = cTemp + 273.15
+ 
+            ferInput.value = roundNumber(fTemp)
+            kelInput.value = roundNumber(kTemp)
+        })
+
+        ferInput.addEventListener('input', function(){
+            let fTemp = parseFloat(ferInput.value)
+            let cTemp = (fTemp - 32) * (5/9)
+            let kTemp = (fTemp - 32) * (5/9) + 273.15
+ 
+            celInput.value = roundNumber(cTemp)
+            kelInput.value = roundNumber(kTemp)
+        })
+
+        kelInput.addEventListener('input', function(){
+            let kTemp = parseFloat(kelInput.value)
+            let cTemp = kTemp - 273.15
+            let fTemp = (kTemp - 273.15) * (9/5) + 32
+ 
+            celInput.value = roundNumber(cTemp)
+            ferInput.value = roundNumber(fTemp)
+        })
+
+        btn.addEventListener('click', ()=>{
+            celInput.value = ""
+            ferInput.value = ""
+            kelInput.value = ""
+        })
+    </script>
+</html>
